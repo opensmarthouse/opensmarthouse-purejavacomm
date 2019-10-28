@@ -3,16 +3,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.bidib.com.github.purejavacomm</groupId>
 	<artifactId>purejavacomm</artifactId>
-	<version>1.0.4-SNAPSHOT</version>
+	<version>1.0.3.1</version>
 
 	<name>PureJavaComm</name>
+	<description>PureJavaComm Project</description>
+	
 	<url>http://www.sparetimelabs.com/purejavacomm/purejavacomm.php</url>
 
-<!--
-	<prerequisites>
-		<maven>2.2.1</maven>
-	</prerequisites>
--->
 	<licenses>
 		<license>
 			<name>Simplified BSD License</name>
