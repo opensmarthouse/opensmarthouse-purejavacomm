@@ -25,15 +25,12 @@
 	</developers>
 
 	<scm>
-		<developerConnection>scm:git:https://github.com/nyholku/purejavacomm.git</developerConnection>
-		<connection>scm:git:http://github.com/nyholku/purejavacomm.git</connection>
-		<url>https://github.com/nyholku/purejavacomm</url>
+		<developerConnection>scm:git:https://github.com/akuhtz/purejavacomm.git</developerConnection>
+		<connection>scm:git:http://github.com/akuhtz/purejavacomm.git</connection>
+		<url>https://github.com/akuhtz/purejavacomm</url>
 	</scm>
 
 	<properties>
-		
-		<gpg.useagent>true</gpg.useagent>
-		
 		<jna-version>5.6.0</jna-version>
 	</properties>
 
