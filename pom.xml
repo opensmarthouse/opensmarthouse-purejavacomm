@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.bidib.com.github.purejavacomm</groupId>
 	<artifactId>purejavacomm</artifactId>
-	<version>1.0.3.1</version>
+	<version>1.0.4-SNAPSHOT</version>
 
 	<name>PureJavaComm</name>
 	<description>PureJavaComm Project</description>
@@ -79,14 +79,14 @@
 
 	<build>
 		<!-- target directory : where *.class are -->
-		<directory>${basedir}/bin</directory>
+		<!-- directory>${basedir}/bin</directory -->
 		<!-- java sources directory -->
 		<sourceDirectory>${basedir}/src</sourceDirectory>
 		<!-- java test sources directory -->
 		<!-- not needed -->
 		<!-- <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory> -->
 
-		<outputDirectory>${basedir}/classes</outputDirectory>
+		<!-- outputDirectory>${basedir}/classes</outputDirectory -->
 		<!-- not needed -->
 		<!-- <testOutputDirectory>${basedir}/test-classes</testOutputDirectory> -->
 
