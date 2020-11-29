@@ -31,39 +31,13 @@
 	</scm>
 
 	<properties>
-		<!--
-		<maven.validate.skip>true</maven.validate.skip>
-		<maven.initialize.skip>true</maven.initialize.skip>
-		<maven.generate-sources.skip>true</maven.generate-sources.skip>
-		<maven.process-sources.skip>true</maven.process-sources.skip>
-		<maven.generate-resources.skip>true</maven.generate-resources.skip>
-		<maven.process-resources.skip>true</maven.process-resources.skip>
-		<maven.compile.skip>true</maven.compile.skip>
-		<maven.process-classes.skip>true</maven.process-classes.skip>
-		<maven.generate-test-sources.skip>true</maven.generate-test-sources.skip>
-		<maven.process-test-sources.skip>true</maven.process-test-sources.skip>
-		<maven.generate-test-resources.skip>true</maven.generate-test-resources.skip>
-		<maven.process-test-resources.skip>true</maven.process-test-resources.skip>
-		<maven.test-compile.skip>true</maven.test-compile.skip>
-		<maven.process-test-classes.skip>true</maven.process-test-classes.skip>
-		<maven.test.skip>true</maven.test.skip>
-		-->
 		
 		<gpg.useagent>true</gpg.useagent>
 		
-		<jna-version>5.3.1</jna-version>
+		<jna-version>5.6.0</jna-version>
 	</properties>
 
 	<distributionManagement>
-		<!--
-		<repository>
-			<uniqueVersion>false</uniqueVersion>
-			<id>repository.com.sparetimelabs</id>
-			<name>PureJavaComm Repository</name>
-			<url>ftp://ftp.sparetimelabs.com/maven2</url>
-			<layout>default</layout>
-		</repository>
-		-->
 
         <snapshotRepository>
             <id>sonatype-nexus-snapshots</id>
@@ -78,33 +52,6 @@
 	</distributionManagement>
 
 	<build>
-		<!-- target directory : where *.class are -->
-		<!-- directory>${basedir}/bin</directory -->
-		<!-- java sources directory -->
-		<sourceDirectory>${basedir}/src</sourceDirectory>
-		<!-- java test sources directory -->
-		<!-- not needed -->
-		<!-- <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory> -->
-
-		<!-- outputDirectory>${basedir}/classes</outputDirectory -->
-		<!-- not needed -->
-		<!-- <testOutputDirectory>${basedir}/test-classes</testOutputDirectory> -->
-
-<!--
-		<extensions>
-			<extension>
-				<groupId>org.apache.maven.wagon</groupId>
-				<artifactId>wagon-ssh</artifactId>
-				<version>2.0</version>
-			</extension>
-
-			<extension>
-				<groupId>org.apache.maven.wagon</groupId>
-				<artifactId>wagon-ftp</artifactId>
-				<version>2.0</version>
-			</extension>
-		</extensions>
--->
 
         <pluginManagement>
             <plugins>
@@ -122,16 +69,21 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.8.0</version>
+					<version>3.8.1</version>
 				</plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>3.1.0</version>
+                    <version>3.1.1</version>
                     <!-- add this to disable checking under JDK8 -->
                     <configuration>
                         <doclint>none</doclint>
                     </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.2.0</version>
                 </plugin>
 				
 				<plugin>
@@ -141,8 +93,18 @@
 				</plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
-                    <version>3.0.1</version>
+                    <version>3.2.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.22.2</version>
                 </plugin>
 
                 <plugin>
@@ -160,8 +122,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
 					<encoding>UTF-8</encoding>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
             <plugin>
@@ -180,7 +142,17 @@
                     </execution>
                 </executions>
             </plugin>
-			
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>test-jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
 		</plugins>
 	</build>
 
