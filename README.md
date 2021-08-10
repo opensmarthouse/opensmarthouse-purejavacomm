@@ -21,7 +21,7 @@ repositories {
 }
 
 dependencies {
-    compile "com.github.purejavacomm:purejavacomm:1.0.3.2"
+    compile "org.bidib.com.github.purejavacomm:purejavacomm:1.0.3.2"
 }
 ```
 Using Maven:
