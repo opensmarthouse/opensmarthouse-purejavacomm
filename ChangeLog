@@ -1,3 +1,10 @@
+Version 1.0.3.2
+
+* Upgraded maven pom to use JNA 5.6.0
+* Added JTermios OpenBSD support
+* Some other fixes
+* Changed groupId to 'org.bidib.com.github.purejavacomm'
+
 Version 1.0.2
 
 * Changed PureJavaSerialPort input stream to throw IOException if the port is closed from an other thread or otherwise

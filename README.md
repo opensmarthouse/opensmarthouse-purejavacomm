@@ -1,5 +1,5 @@
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.purejavacomm/purejavacomm/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.purejavacomm/purejavacomm)
-[![Javadocs](https://www.javadoc.io/badge/com.github.purejavacomm/purejavacomm.svg)](https://www.javadoc.io/doc/com.github.purejavacomm/purejavacomm)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.bidib.com.github.purejavacomm/purejavacomm/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.bidib.com.github.purejavacomm/purejavacomm)
+[![Javadocs](https://www.javadoc.io/badge/org.bidib.com.github.purejavacomm/purejavacomm.svg)](https://www.javadoc.io/doc/org.bidib.com.github.purejavacomm/purejavacomm)
 
 
 PureJavaComm is an Application Programmin Interface (API) for accessing serial ports from Java, so this is a library aimed at programmers, not end users.
@@ -21,14 +21,14 @@ repositories {
 }
 
 dependencies {
-    compile "com.github.purejavacomm:purejavacomm:1.0.1.RELEASE"
+    compile "com.github.purejavacomm:purejavacomm:1.0.3.2"
 }
 ```
 Using Maven:
 ```xml
 <dependency>
-    <groupId>com.github.purejavacomm</groupId>
+    <groupId>org.bidib.com.github.purejavacomm</groupId>
     <artifactId>purejavacomm</artifactId>
-    <version>1.0.1.RELEASE</version>
+    <version>1.0.3.2</version>
 </dependency>
 ```
