@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.opensmarthouse</groupId>
 	<artifactId>purejavacomm</artifactId>
-	<version>1.0.5</version>
+	<version>1.0.6-SNAPSHOT</version>
 
 	<name>OpenSmartHouse PureJavaComm</name>
 	<description>PureJavaComm Project</description>
@@ -27,7 +27,7 @@
 		<developerConnection>scm:git:https://github.com/opensmarthouse/opensmarthouse-purejavacomm.git</developerConnection>
 		<connection>scm:git:http://github.com/opensmarthouse/opensmarthouse-purejavacomm.git</connection>
 		<url>https://github.com/opensmarthouse/opensmarthouse-purejavacomm</url>
-	  <tag>purejavacomm-1.0.5</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 	<properties>
