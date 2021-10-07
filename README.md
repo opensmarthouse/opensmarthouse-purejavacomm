@@ -23,7 +23,7 @@ repositories {
 }
 
 dependencies {
-    compile "org.opensmarthouse:purejavacomm:1.0.4"
+    compile "org.opensmarthouse:purejavacomm:1.0.5"
 }
 ```
 
@@ -33,6 +33,6 @@ Using Maven:
 <dependency>
     <groupId>org.opensmarthouse</groupId>
     <artifactId>purejavacomm</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
 </dependency>
 ```
