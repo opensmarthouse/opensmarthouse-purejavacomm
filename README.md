@@ -1,6 +1,7 @@
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.bidib.com.github.purejavacomm/purejavacomm/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.bidib.com.github.purejavacomm/purejavacomm)
 [![Javadocs](https://www.javadoc.io/badge/org.bidib.com.github.purejavacomm/purejavacomm.svg)](https://www.javadoc.io/doc/org.bidib.com.github.purejavacomm/purejavacomm)
 
+OpenSmartHouse fork of PureJavaComm to incorporate OSGi manifest headers and deploy to maven.
 
 PureJavaComm is an Application Programmin Interface (API) for accessing serial ports from Java, so this is a library aimed at programmers, not end users.
 
@@ -15,20 +16,23 @@ PJC is BSD licensed but please note it depends on JNA which is LGPL/ASL dual lic
 PureJavaComm is deployed to Maven Central. Here are a few examples using popular build frameworks.
 
 Using Gradle:
+
 ```groovy
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile "org.bidib.com.github.purejavacomm:purejavacomm:1.0.3.2"
+    compile "org.opensmarthouse:purejavacomm:1.0.4"
 }
 ```
+
 Using Maven:
+
 ```xml
 <dependency>
-    <groupId>org.bidib.com.github.purejavacomm</groupId>
+    <groupId>org.opensmarthouse</groupId>
     <artifactId>purejavacomm</artifactId>
-    <version>1.0.3.2</version>
+    <version>1.0.4</version>
 </dependency>
 ```

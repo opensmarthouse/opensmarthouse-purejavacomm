@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.bidib.com.github.purejavacomm</groupId>
+	<groupId>org.opensmarthouse</groupId>
 	<artifactId>purejavacomm</artifactId>
 	<version>1.0.4-SNAPSHOT</version>
 
-	<name>PureJavaComm</name>
+	<name>OpenSmartHouse PureJavaComm</name>
 	<description>PureJavaComm Project</description>
 	
 	<url>http://www.sparetimelabs.com/purejavacomm/purejavacomm.php</url>
@@ -25,9 +25,9 @@
 	</developers>
 
 	<scm>
-		<developerConnection>scm:git:https://github.com/akuhtz/purejavacomm.git</developerConnection>
-		<connection>scm:git:http://github.com/akuhtz/purejavacomm.git</connection>
-		<url>https://github.com/akuhtz/purejavacomm</url>
+		<developerConnection>scm:git:https://github.com/opensmarthouse/opensmarthouse-purejavacomm.git</developerConnection>
+		<connection>scm:git:http://github.com/opensmarthouse/opensmarthouse-purejavacomm.git</connection>
+		<url>https://github.com/opensmarthouse/opensmarthouse-purejavacomm</url>
 	</scm>
 
 	<properties>
@@ -35,21 +35,19 @@
 	</properties>
 
 	<distributionManagement>
-
         <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
+            <id>opensmarthouse-sonatype-snapshot</id>
             <name>Sonatype Nexus Snapshots</name>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
         <repository>
-            <id>sonatype-nexus-staging</id>
+            <id>opensmarthouse-sonatype-release</id>
             <name>Nexus Staging Repository</name>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
 	</distributionManagement>
 
 	<build>
-
         <pluginManagement>
             <plugins>
 				<plugin>
@@ -109,7 +107,6 @@
                     <artifactId>nexus-staging-maven-plugin</artifactId>
                     <version>1.6.8</version>
                 </plugin>
-
             </plugins>
         </pluginManagement>
 
