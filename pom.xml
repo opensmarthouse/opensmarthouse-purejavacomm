@@ -1,9 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.opensmarthouse</groupId>
 	<artifactId>purejavacomm</artifactId>
-	<version>1.0.4-SNAPSHOT</version>
+	<version>1.0.4</version>
 
 	<name>OpenSmartHouse PureJavaComm</name>
 	<description>PureJavaComm Project</description>
@@ -28,7 +27,8 @@
 		<developerConnection>scm:git:https://github.com/opensmarthouse/opensmarthouse-purejavacomm.git</developerConnection>
 		<connection>scm:git:http://github.com/opensmarthouse/opensmarthouse-purejavacomm.git</connection>
 		<url>https://github.com/opensmarthouse/opensmarthouse-purejavacomm</url>
-	</scm>
+	  <tag>purejavacomm-1.0.4</tag>
+  </scm>
 
 	<properties>
 		<jna-version>5.6.0</jna-version>
